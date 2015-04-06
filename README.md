@@ -67,7 +67,7 @@ In this example, the default options are used to compile a sass file
 ```js
 grunt.initConfig({
   libsass: {
-      myTarget{
+      myTarget:{
           src: 'src/my.scss'
           dest: 'dist/my.css',
       }
@@ -85,7 +85,7 @@ grunt.initConfig({
       loadPath: ['my/load/path'],
       sourcemap: true
     },
-    files: {[
+    files: [
         {
             expand: true,
             cwd: 'my/src/dir',
@@ -93,7 +93,7 @@ grunt.initConfig({
             dest: 'dist',
             ext: '.css'
         }
-    ]},
+    ]
   }
 });
 ```
